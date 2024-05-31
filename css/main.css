@@ -1,0 +1,89 @@
+/*
+
+CSS GUIDE
+
+1. General Styles
+2. General Rules
+3. Grid Styles
+4. Utility Classes
+
+*/
+
+/* 1. ---General Styles--- */
+
+.hidden {
+    display: none;
+}
+
+body {
+    margin: 0 auto;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+/* 2. ---General Rules */
+
+img, embed, object, video, picture {
+    max-width: 100%;
+}
+
+p, h1, h2, h3, h4, h5 {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    transition: all .5s ease-in-out;
+}
+
+input, textarea {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+/* 3. ---Grid Styles--- */
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherig;
+}
+
+/* 4. ---Utility Classes--- */
+
+.box {
+    background-color: powderblue;
+    color: black;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.box:hover {
+    background-color: rebeccapurple;
+    color: powderblue;
+    transition: .25s all ease-in-out;
+}
+
+.blocky {
+    display: block;
+    width: 400px;
+    background-color: powderblue;
+    border-radius: 5px;
+    border: 2px solid #0f181c;
+    /* border: thick double #0f181c */
+}
+
+.blocky:hover {
+    width: 500px;
+    border: 4mm ridge rgba(211, 220, 50, .6);
+}
